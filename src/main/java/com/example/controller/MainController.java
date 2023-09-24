@@ -14,6 +14,6 @@ public class MainController {
     @ResponseBody
     @RequestMapping("/")
     public String hello(){
-        return "HelloWorld!!!!!!!!!!!!!!!!!!!!";
+        return "第一个SpringMVC项目";
     }
 }

@@ -15,14 +15,18 @@ public class ServletInitializer extends AbstractAnnotationConfigDispatcherServle
      **/
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[]{WebConfig.class};
+        return new Class[]{SpringConfig.class};
     }
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[0];
+        return new Class[]{WebConfig.class};
     }
-
+    /**
+     * @Description: Servlet拦截的所有请求都交由SpringMVC处理
+     * @Param: 
+     * @Return: 
+     **/
     @Override
     protected String[] getServletMappings() {
         return new String[]{"/"};

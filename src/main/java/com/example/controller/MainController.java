@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class MainController {
     @ResponseBody
-    @RequestMapping("/")
+    @RequestMapping("/hello")
     public String hello(){
         return "第一个SpringMVC项目";
     }

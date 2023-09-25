@@ -1,5 +1,7 @@
 package com.example.config;
 
+import jakarta.servlet.Filter;
+import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /**
@@ -31,4 +33,6 @@ public class ServletInitializer extends AbstractAnnotationConfigDispatcherServle
     protected String[] getServletMappings() {
         return new String[]{"/"};
     }
+
+
 }

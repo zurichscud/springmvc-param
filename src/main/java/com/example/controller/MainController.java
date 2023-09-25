@@ -7,13 +7,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 /**
  * @Author: zurichscud
  * @Date: 2023/9/24 15:43
- * @Description: TODO
+ * @Description: main控制器
  */
 @Controller
 public class MainController {
     @ResponseBody
-    @RequestMapping("/hello")
-    public String hello(){
-        return "第一个SpringMVC项目";
+    @RequestMapping("/")
+    public String demo1(){
+        return "BUILD SUCCESS";
     }
+
 }
+
